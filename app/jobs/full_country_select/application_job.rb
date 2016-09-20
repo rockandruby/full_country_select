@@ -1,0 +1,4 @@
+module FullCountrySelect
+  class ApplicationJob < ActiveJob::Base
+  end
+end
