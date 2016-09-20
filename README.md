@@ -2,9 +2,10 @@
 Gems adds dynamic functionality for 'city-state' gem. For example, you choose
 some country and automatically you receive all states for that country, then
 you choose state and receive all cities for that state using ajax.
+All databases are taken from MaxMind.
 
 ## Installation
-Add this line to your application's Gemfile:
+Add this line to your Rails application's Gemfile:
 
 ```ruby
 gem 'full_country_select'
@@ -14,7 +15,7 @@ And then execute:
 ```bash
 $ bundle
 ```
-Then you should run generator 'rails g full_country_select:install' which will add
+Then you should run generator **rails g full_country_select:install** which will add
 routes, helpers and assets to your app.
 
 Or install it yourself as:
@@ -46,7 +47,7 @@ If you want to use country select for objects and to get selected one from db, y
 
 You have the following helpers:  get_countries - returns countries list, selected_state and
 selected_city - helpers that require your object and return selected value. Of course, your object
-should include fields: country(sting), state(string), city(integer).
+should include fields: country(string), state(string), city(integer).
 
 ## Example
 [link to Example!] (https://jobbber.herokuapp.com/jobs)
