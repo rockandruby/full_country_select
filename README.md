@@ -18,7 +18,7 @@ $ bundle
 Then you should run generator **rails g full_country_select:install** which will add
 routes, helpers and assets to your app.
 You should define root in your routes to work generator properly or you can take code
-from generator and insert it manually.
+from generator and insert it manually to proper files.
 
 Or install it yourself as:
 ```bash
