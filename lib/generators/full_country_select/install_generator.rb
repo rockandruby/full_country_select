@@ -11,7 +11,7 @@ module FullCountrySelect
 
     def add_helper
       inject_into_file 'app/controllers/application_controller.rb', after: "exception" do
-        "\nhelper FullCountrySelect::ApiHelper\n"
+        "\nhelper FullCountrySelect::ApiHelper"
       end
     end
 
@@ -19,7 +19,7 @@ module FullCountrySelect
 
     def add_assets
       inject_into_file 'app/assets/javascripts/application.js', after: "jquery_ujs" do
-        "\n//= require full_country_select/api\n"
+        "\n//= require full_country_select/api"
       end
     end
   end
