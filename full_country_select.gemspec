@@ -8,15 +8,16 @@ Gem::Specification.new do |s|
   s.name        = "full_country_select"
   s.version     = FullCountrySelect::VERSION
   s.authors     = ["Igor"]
-  s.email       = ["igor.pogosian@small-team.com"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of FullCountrySelect."
-  s.description = "TODO: Description of FullCountrySelect."
+  s.email       = ["igor12306@mail.ru"]
+  s.homepage    = "https://github.com/rockandruby/full_country_select"
+  s.summary     = "Country/State/City select list."
+  s.description = "Adds dynamic search for countries, states and cities."
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
 
-  s.add_dependency "rails", "~> 5.0.0", ">= 5.0.0.1"
+  s.add_dependency "rails"
+  s.add_dependency "city-state"
 
   s.add_development_dependency "sqlite3"
 end
