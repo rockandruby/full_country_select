@@ -47,9 +47,12 @@ If you want to use country select for objects and to get selected one from db, y
 
         = f.select :city, selected_city(@object), {}, id: 'city'
 
-You have the following helpers:  get_countries - returns countries list, selected_state and
-selected_city - helpers that require your object and return selected value. Of course, your object
+You have the following helpers:  get_countries - returns countries list, selected_state(obj) and
+selected_city(obj) - helpers that require your object and return selected value. Of course, your object
 should include fields: country(string), state(string), city(integer).
+
+Of course, you can get country/state/city title by it's code. Thus you have 3 helpers:
+country_name(obj), state_name(obj), city_name(obj) which receive your object as an argument.
 
 ## Example
 [link to Example!] (https://jobbber.herokuapp.com/jobs)
